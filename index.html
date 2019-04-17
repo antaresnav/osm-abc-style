@@ -2,75 +2,134 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Swipe between maps</title>
+    <title>Antares Maps Compare</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        body {
+            margin:0; 
+            padding:0;
+            overflow: hidden;
+        }
+
+        body * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .box {
+            position: absolute;
+            top: 10px;
+            z-index:2;
+        }
+
+        .box select {
+            background-color: #0563af;
+            color: white;
+            padding: 12px;
+            width: 250px;
+            border: none;
+            font-size: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            -webkit-appearance: button;
+            appearance: button;
+            outline: none;
+        }
+
+        .box::before {
+            content: "\f13a";
+            font-family: FontAwesome;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            font-size: 28px;
+            line-height: 45px;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+
+        .box:hover::before {
+            color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .box select option {
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
-
-<style>
-body {
-    overflow: hidden;
-}
-
-body * {
-   -webkit-touch-callout: none;
-     -webkit-user-select: none;
-        -moz-user-select: none;
-         -ms-user-select: none;
-             user-select: none;
-}
-
-.map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-</style>
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
-
-<div id='before' class='map'></div>
-<div id='after' class='map'></div>
-<div id='menu'>
-    <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-    <label for='streets'>streets</label>
-    <input id='light-v10' type='radio' name='rtoggle' value='light'>
-    <label for='light'>light</label>
-    <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-    <label for='dark'>dark</label>
-    <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
-    <label for='outdoors'>outdoors</label>
-    <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-    <label for='satellite'>satellite</label>
-</div>
+    <div id='before' class='map'>
+        <div class="box" style="left:10px">
+            <select id="beforeMapStyles" onchange="switchBeforeMapStyle()"></select>
+        </div>
+    </div>
+    <div id='after' class='map'>
+        <div class="box" style="right:10px">
+            <select id="afterMapStyles" onchange="switchAfterMapStyle()"></select>
+        </div>
+    </div>
+</body>    
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibW5wIiwiYSI6ImNpb2V0cHFvNDAwM2p2cGo3ajI5azJ2a3kifQ.7_UGPzlFSNK2eE7UPPTInQ';
-var beforeMap = new mapboxgl.Map({
-    container: 'before',
-    style: 'style/osm-raster.json',
-    center: [19.04, 47.5],
-    zoom: 15
-});
+    var styles = {
+        'OSM' : 'style/osm-raster.json',
+        'ABC' : 'https://api.maptiler.com/maps/250c641d-7d36-488a-9280-ad0d5ec65a61/style.json?key=QPtkTkvrA46Rpsc0gUQm'
+    };
+    var selectedBefore = 'OSM';
+    var selectedAfter = 'ABC';
 
-var afterMap = new mapboxgl.Map({
-    container: 'after',
-    style: 'https://api.maptiler.com/maps/250c641d-7d36-488a-9280-ad0d5ec65a61/style.json?key=QPtkTkvrA46Rpsc0gUQm',
-    center: [19.04, 47.5],
-    zoom: 15
-});
+    mapboxgl.accessToken = 'pk.eyJ1IjoibW5wIiwiYSI6ImNpb2V0cHFvNDAwM2p2cGo3ajI5azJ2a3kifQ.7_UGPzlFSNK2eE7UPPTInQ';
+    var beforeMap = new mapboxgl.Map({
+        container: 'before',
+        style: styles[selectedBefore],
+        center: [19.04, 47.5],
+        zoom: 15
+    });
 
-var map = new mapboxgl.Compare(beforeMap, afterMap, {
-    // Set this to enable comparing two maps by mouse movement:
-    // mousemove: true
-});
+    var afterMap = new mapboxgl.Map({
+        container: 'after',
+        style: styles[selectedAfter],
+        center: [19.04, 47.5],
+        zoom: 15
+    });
+
+    var map = new mapboxgl.Compare(beforeMap, afterMap);
+
+    var beforeMapStyles = document.getElementById('beforeMapStyles');
+    var afterMapStyles = document.getElementById('afterMapStyles');
+    for(index in styles) {
+        beforeMapStyles.options[beforeMapStyles.options.length] = new Option(index, styles[index]);
+        if (index === selectedBefore) {
+            beforeMapStyles.selectedIndex = beforeMapStyles.options.length - 1;
+        }
+        afterMapStyles.options[afterMapStyles.options.length] = new Option(index, styles[index]);
+        if (index === selectedAfter) {
+            afterMapStyles.selectedIndex = afterMapStyles.options.length - 1;
+        }
+    }
+    function switchBeforeMapStyle() {
+        beforeMap.setStyle(beforeMapStyles.value);
+    }
+    function switchAfterMapStyle() {
+        afterMap.setStyle(afterMapStyles.value);
+    }
 </script>
-
-</body>
 </html>
