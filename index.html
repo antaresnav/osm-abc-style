@@ -41,6 +41,7 @@
             background-color: #0563af;
             color: white;
             padding: 12px;
+            padding-right: 50px;
             width: 250px;
             border: none;
             font-size: 20px;
@@ -92,10 +93,11 @@
     var styles = {
         'OSM raster' : 'style/osm-raster.json',
         'OSM vector' : 'https://api.maptiler.com/maps/250c641d-7d36-488a-9280-ad0d5ec65a61/style.json?key=QPtkTkvrA46Rpsc0gUQm',
-        'OSM vector + POIX': 'https://api.maptiler.com/maps/0144310e-ad9f-49e0-9b9a-15bd24530b92/style.json?key=QPtkTkvrA46Rpsc0gUQm'
+        'OSM vector + POIX full name': 'https://api.maptiler.com/maps/e72c41c6-d0e3-48d4-a5b1-d08c1ab09994/style.json?key=QPtkTkvrA46Rpsc0gUQm',
+        'OSM vector + POIX short name': 'https://api.maptiler.com/maps/0144310e-ad9f-49e0-9b9a-15bd24530b92/style.json?key=QPtkTkvrA46Rpsc0gUQm'
     };
-    var selectedLeft = 'OSM vector';
-    var selectedRight = 'OSM vector + POIX';
+    var selectedLeft = 'OSM vector + POIX short name';
+    var selectedRight = 'OSM vector + POIX full name';
 
     mapboxgl.accessToken = 'pk.eyJ1IjoibW5wIiwiYSI6ImNpb2V0cHFvNDAwM2p2cGo3ajI5azJ2a3kifQ.7_UGPzlFSNK2eE7UPPTInQ';
     var leftMap = new mapboxgl.Map({
