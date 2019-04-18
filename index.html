@@ -79,57 +79,58 @@
 <body>
     <div id='before' class='map'>
         <div class="box" style="left:10px">
-            <select id="beforeMapStyles" onchange="switchBeforeMapStyle()"></select>
+            <select id="leftMapStyles" onchange="switchLeftMapStyle()"></select>
         </div>
     </div>
     <div id='after' class='map'>
         <div class="box" style="right:10px">
-            <select id="afterMapStyles" onchange="switchAfterMapStyle()"></select>
+            <select id="rightMapStyles" onchange="switchRightMapStyle()"></select>
         </div>
     </div>
 </body>    
 <script>
     var styles = {
-        'OSM' : 'style/osm-raster.json',
-        'ABC' : 'https://api.maptiler.com/maps/250c641d-7d36-488a-9280-ad0d5ec65a61/style.json?key=QPtkTkvrA46Rpsc0gUQm'
+        'OSM raster' : 'style/osm-raster.json',
+        'OSM vector' : 'https://api.maptiler.com/maps/250c641d-7d36-488a-9280-ad0d5ec65a61/style.json?key=QPtkTkvrA46Rpsc0gUQm',
+        'OSM vector + POIX': 'https://api.maptiler.com/maps/0144310e-ad9f-49e0-9b9a-15bd24530b92/style.json?key=QPtkTkvrA46Rpsc0gUQm'
     };
-    var selectedBefore = 'OSM';
-    var selectedAfter = 'ABC';
+    var selectedLeft = 'OSM vector';
+    var selectedRight = 'OSM vector + POIX';
 
     mapboxgl.accessToken = 'pk.eyJ1IjoibW5wIiwiYSI6ImNpb2V0cHFvNDAwM2p2cGo3ajI5azJ2a3kifQ.7_UGPzlFSNK2eE7UPPTInQ';
-    var beforeMap = new mapboxgl.Map({
+    var leftMap = new mapboxgl.Map({
         container: 'before',
-        style: styles[selectedBefore],
+        style: styles[selectedLeft],
         center: [19.04, 47.5],
         zoom: 15
     });
 
-    var afterMap = new mapboxgl.Map({
+    var rightMap = new mapboxgl.Map({
         container: 'after',
-        style: styles[selectedAfter],
+        style: styles[selectedRight],
         center: [19.04, 47.5],
         zoom: 15
     });
 
-    var map = new mapboxgl.Compare(beforeMap, afterMap);
+    var map = new mapboxgl.Compare(leftMap, rightMap);
 
-    var beforeMapStyles = document.getElementById('beforeMapStyles');
-    var afterMapStyles = document.getElementById('afterMapStyles');
+    var leftMapStyles = document.getElementById('leftMapStyles');
+    var rightMapStyles = document.getElementById('rightMapStyles');
     for(index in styles) {
-        beforeMapStyles.options[beforeMapStyles.options.length] = new Option(index, styles[index]);
-        if (index === selectedBefore) {
-            beforeMapStyles.selectedIndex = beforeMapStyles.options.length - 1;
+        leftMapStyles.options[leftMapStyles.options.length] = new Option(index, styles[index]);
+        if (index === selectedLeft) {
+            leftMapStyles.selectedIndex = leftMapStyles.options.length - 1;
         }
-        afterMapStyles.options[afterMapStyles.options.length] = new Option(index, styles[index]);
-        if (index === selectedAfter) {
-            afterMapStyles.selectedIndex = afterMapStyles.options.length - 1;
+        rightMapStyles.options[rightMapStyles.options.length] = new Option(index, styles[index]);
+        if (index === selectedRight) {
+            rightMapStyles.selectedIndex = rightMapStyles.options.length - 1;
         }
     }
-    function switchBeforeMapStyle() {
-        beforeMap.setStyle(beforeMapStyles.value);
+    function switchLeftMapStyle() {
+        leftMap.setStyle(leftMapStyles.value);
     }
-    function switchAfterMapStyle() {
-        afterMap.setStyle(afterMapStyles.value);
+    function switchRightMapStyle() {
+        rightMap.setStyle(rightMapStyles.value);
     }
 </script>
 </html>
