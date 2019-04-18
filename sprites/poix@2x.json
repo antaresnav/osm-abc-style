@@ -1,0 +1,737 @@
+{
+  "BKK": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 0
+  },
+  "DIY": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 0
+  },
+  "allatjoletiszolgaltatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 37
+  },
+  "allatkert_arboretum": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 37
+  },
+  "antikvarium": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 0
+  },
+  "aruhaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 0
+  },
+  "bankautomata": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 37
+  },
+  "bankfiok": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 37
+  },
+  "bevasarlokozpont": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 74
+  },
+  "birosag": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 74
+  },
+  "biztositas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 74
+  },
+  "bolcsode": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 27,
+    "x": 111,
+    "y": 74
+  },
+  "borbely": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 111
+  },
+  "bringapont": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 111
+  },
+  "buszpalyaudvar": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 111
+  },
+  "butor": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 111
+  },
+  "cipo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 0
+  },
+  "csomagszolgaltatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 0
+  },
+  "dohanybolt": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 0
+  },
+  "egeszsegugy": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 0
+  },
+  "egyebkiskereskedelem": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 37
+  },
+  "elektromosaru": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 37
+  },
+  "elektromosautotoltopont": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 37
+  },
+  "elelmiszer": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 37
+  },
+  "epitettorokseg": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 138,
+    "y": 74
+  },
+  "etrendkiegeszitouzlet": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 175,
+    "y": 74
+  },
+  "felsooktatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 212,
+    "y": 74
+  },
+  "fogorvos": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 249,
+    "y": 74
+  },
+  "furdo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 111
+  },
+  "galeria": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 111
+  },
+  "gepjarmukereskedelem": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 111
+  },
+  "gepjarmuszerviz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 111
+  },
+  "gyogyszertar": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 148
+  },
+  "hasznaltruhazat": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 148
+  },
+  "horgaszto": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 148
+  },
+  "ingatlanugynokseg": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 148
+  },
+  "iparipark": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 148
+  },
+  "irodahaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 148
+  },
+  "iskola": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 148
+  },
+  "jarmualkatresz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 148
+  },
+  "jarmukolcsonzes": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 185
+  },
+  "jegyiroda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 185
+  },
+  "kaszino": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 185
+  },
+  "kerteszetiaru": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 185
+  },
+  "kikoto_komp": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 185
+  },
+  "konferenciakozpont": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 185
+  },
+  "konyvesbolt": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 185
+  },
+  "konyvtar": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 185
+  },
+  "korhaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 222
+  },
+  "kozigazgatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 222
+  },
+  "kozjegyzo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 222
+  },
+  "kozmetikum": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 222
+  },
+  "kozmuszolgaltatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 222
+  },
+  "kozpark": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 222
+  },
+  "legikozlekedes": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 222
+  },
+  "lottozo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 222
+  },
+  "lovarda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 0,
+    "y": 259
+  },
+  "mentoallomas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 37,
+    "y": 259
+  },
+  "mezogazdasagigep": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 74,
+    "y": 259
+  },
+  "mosoda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 111,
+    "y": 259
+  },
+  "mozi": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 148,
+    "y": 259
+  },
+  "muvelodesihaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 185,
+    "y": 259
+  },
+  "muzeum": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 222,
+    "y": 259
+  },
+  "oktatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 259,
+    "y": 259
+  },
+  "optika": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 296,
+    "y": 0
+  },
+  "oraekszer": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 333,
+    "y": 0
+  },
+  "orvosirendelo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 370,
+    "y": 0
+  },
+  "orvositermek": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 407,
+    "y": 0
+  },
+  "ovoda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 444,
+    "y": 0
+  },
+  "papir_iroszer": {
+    "height": 35,
+    "pixelRatio": 2,
+    "width": 17,
+    "x": 296,
+    "y": 185
+  },
+  "parkolo": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 481,
+    "y": 0
+  },
+  "pekseg": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 518,
+    "y": 0
+  },
+  "penzvalto": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 555,
+    "y": 0
+  },
+  "piac": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 296,
+    "y": 37
+  },
+  "polgarmesterihivatal": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 333,
+    "y": 37
+  },
+  "posta": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 370,
+    "y": 37
+  },
+  "rendorseg": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 407,
+    "y": 37
+  },
+  "ruhazat": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 444,
+    "y": 37
+  },
+  "sport_szabadido": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 481,
+    "y": 37
+  },
+  "sportfelszereles": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 518,
+    "y": 37
+  },
+  "szallas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 555,
+    "y": 37
+  },
+  "szepsegapolas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 286,
+    "y": 74
+  },
+  "szervezet": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 323,
+    "y": 74
+  },
+  "szinhaz_koncert": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 360,
+    "y": 74
+  },
+  "szocialisellatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 397,
+    "y": 74
+  },
+  "szonyeg_textil": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 434,
+    "y": 74
+  },
+  "takarekszovetkezet": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 471,
+    "y": 74
+  },
+  "taxiallomas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 508,
+    "y": 74
+  },
+  "telehaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 545,
+    "y": 74
+  },
+  "temeto": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 296,
+    "y": 111
+  },
+  "templom": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 333,
+    "y": 111
+  },
+  "termeszetiertek": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 370,
+    "y": 111
+  },
+  "turistainformacio": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 407,
+    "y": 111
+  },
+  "tuzep": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 444,
+    "y": 111
+  },
+  "tuzoltosag": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 481,
+    "y": 111
+  },
+  "ugyvediiroda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 518,
+    "y": 111
+  },
+  "ujsagarus": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 555,
+    "y": 111
+  },
+  "uszoda": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 296,
+    "y": 148
+  },
+  "uzemanyagtoltoallomas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 333,
+    "y": 148
+  },
+  "vasutallomas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 370,
+    "y": 148
+  },
+  "vegyesiparcikkbolt": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 407,
+    "y": 148
+  },
+  "vendeglatas": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 444,
+    "y": 148
+  },
+  "viragbolt": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 481,
+    "y": 148
+  },
+  "zaloghaz": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 518,
+    "y": 148
+  },
+  "zenesszorakozohely": {
+    "height": 37,
+    "pixelRatio": 2,
+    "width": 37,
+    "x": 555,
+    "y": 148
+  }
+}
